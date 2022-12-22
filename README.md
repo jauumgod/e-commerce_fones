@@ -1,11 +1,11 @@
 # TUTORIAL DO DANILO PAIXÃO COM IMPLEMENTAÇÃO DE LOGIN COM PYTHON
 BIBLIOTECAS USADAS
 ```
-  Flask
-  Flask-login
-  Flask-sqlalchemy
-  Random
-  Werkzeug
+from flask import Flask, url_for, render_template, request, redirect
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager, UserMixin, login_required, login_user
+from werkzeug.security import generate_password_hash, check_password_hash
+from random import randint
 ```
 
 
